@@ -14,10 +14,10 @@
     <div class="controls">
         <label for="spacing">Spacing</label>
         <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
-        
+        <br>
         <label for="blur">Blur</label>
         <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
-        
+        <br>
         <label for="base">Base Color</label>
         <input type="color" name="base" value="#ffc600">
     </div>
@@ -60,11 +60,31 @@
         }
         
         @media (max-width : 700px){
+        .bodyInner{
+          width: 90%;
+          margin: 0 auto;
+        }
+         
           h2{
             font-size:25px;
+            text-align: center;
           }
           
-          
+        .controls label{
+          font-size: 18px;
+          font-weight: bold;
+        }
+        
+       .controls input{
+         width: 30%;
+         transform: translateY(30%);
+        }
+        
+        img{
+          width:60%;
+          margin: 0 20%;
+        }
+        
         }
 
     </style>
